@@ -1,9 +1,7 @@
-const express = require('express')
-const res = require('express/lib/response')
-const app = express()
+const customExpress = require( './config/customExpress ') 
 
-app.listen(3000,()=>{
-    console.log('server running')
-})
+const app = customExpress() 
 
-app.get('/atendimentos',(req,rest)=> res.send('funcionando'))
+app.listen(3000, () => {
+    console.log( 'server running ') 
+}) 
