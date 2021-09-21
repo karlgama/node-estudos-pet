@@ -6,7 +6,8 @@
   "dependencies": {
     "consign": "^0.1.6",
     "express": "^4.17.1",
-    "mariadb": "^2.5.4"
+    "mariadb": "^2.5.4",
+    "mysql": "^2.18.1"
   },
   "scripts": {
     "start": "nodemon index.js"

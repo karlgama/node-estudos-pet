@@ -1,13 +1,14 @@
 const conexao = require('../infraestrutura/conexao')
 
 class Atendimento {
-    create(atendimento) {
-        const sql = 'INSERT INTO atendimentos SET ?'
+    async create(atendimento) {
+        const sql = 'INSERT INTO atendimentos set ?'
 
         conexao.query(sql,atendimento,(error,result)=>{
             if(error)
                 console.log(error)
             console.log(result)
+            return result
         })
     }
 }
